@@ -189,10 +189,17 @@ title: Home
                 <source src="/img/music.mp3" type="audio/mpeg">
               </audio> -->
               <img src="/img/icons/play.svg" alt="" />
-              <audio id="" autoplay loop>
-                <source src="/img/music.mp3" type="audio/ogg">
-                <source src="/img/music.mp3" type="audio/mpeg" />
-              </audio>
+              
+            <video class="video" autoplay loop muted>
+                <source src="/img/music.mp3" />
+            </video>
+            
+            <script>
+                window.onload = function () {
+                    document.querySelector("video").muted = false;
+                };
+            </script>
+            
           
               <!-- <div id="player-container">
                 <div id="play-pause" class="play">
